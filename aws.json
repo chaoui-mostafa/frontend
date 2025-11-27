@@ -1,0 +1,16 @@
+{
+  "frontend": {
+    "bucket": "business-analytics-app-frontend",
+    "region": "us-east-1",
+    "buildCommand": "npm run build",
+    "outputDirectory": "build"
+  },
+  "backend": {
+    "bucket": "business-analytics-app-backend",
+    "region": "us-east-1",
+    "ecrRepository": "business-analytics-backend",
+    "cluster": "business-analytics-cluster",
+    "service": "backend-service",
+    "taskDefinition": "backend-task"
+  }
+}
